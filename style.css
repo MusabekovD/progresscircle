@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Poppins:wght@300;400;500;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;	
+    font-family: 'Poppins', sans-serif;
+    }
+body{
+    width: 100%;
+    height: 100vh;
+    background: rgb(233,30,99);
+    background: linear-gradient(90deg, rgba(233,30,99,1) 17%, rgba(103,58,183,1) 65%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    /* padding: 20px 0 ; */
+    width: 400px;
+    height: 400px;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(233,30,99);
+background: linear-gradient(90deg, rgba(233,30,99,0) 17%, rgba(103,58,183,0) 65%);
+}
+.progress-circle .circle{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: -70px;
+    background: conic-gradient(  #0bec7bb3  30deg, #fff  0deg );
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.progress-circle .circle::after{
+    position: absolute;
+    content: " ";
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    background: #fff;
+    
+}
+.value{
+    font-size: 30px;
+    z-index: 10;
+    color: rgba(48,150,114,1);
+}
+span{
+    font-size: 25px;
+    font-weight: 800;
+    color: rgb(191, 252, 235);
+    margin-bottom: 10px;
+}
+.btn{
+    width: 70%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    height: 50px;
+    font-size: 25px;
+      color: rgba(48,150,114,1);  
+      font-weight: 800;
+      outline: none;
+      padding: 10px 5px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      border-color: rgba(48,150,114,1);
+      align-items: center;
+      text-align: center;
+}
+button{
+    padding: 10px;
+    font-weight: 800;
+    color: #fff;
+    background: rgb(233,30,99);
+background: linear-gradient(90deg, rgba(233,30,99,1) 17%, rgba(103,58,183,1) 65%);
+}
